@@ -1,0 +1,503 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background: #19ec09;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  header nav a:hover {
+    color: #ddb892;
+  }
+  
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 0;
+  }
+  
+  .profile-picture img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%; /* Ensures a perfect circle */
+    object-fit: cover;  /* Ensures the image is cropped properly */
+    display: block;     /* Avoids inline image spacing issues */
+}
+
+  
+  .details {
+    max-width: 800px;
+  }
+  
+  .about,
+  .contact {
+    padding: 20px;
+    background: #ede0d4;
+    margin-top: 20px;
+  }
+  
+  .about h2,
+  .contact h2 {
+    margin-bottom: 15px;
+    color: #b08968;
+  }
+  
+  .contact .contact-details {
+    margin-top: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #7f5539;
+    color: white;
+    margin-top: 20px;
+  }
+  
+
+  body {
+    background-color: #E6CCB2; /* Main background color */
+    color: #4A403A;           /* Default text color */
+}
+
+header {
+    background-color: #4A403A; /* Header background */
+    color: #E6CCB2;           /* Header text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;                   /* Space between nav links */
+}
+
+h1, h2 {
+    color: #B08968; /* Heading color */
+}
+
+a:hover {
+    color: #D5E1E8; /* Hover color for links */
+}
+
+button {
+    background-color: #B08968;
+    color: #E6CCB2;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D5E1E8;
+    color: #4A403A;
+}
+
+.profile-picture {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden; /* Ensures circular masking */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Keeps both images circular */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out; /* Smooth fade effect */
+}
+
+.profile-picture .main-picture {
+    opacity: 1; /* Default profile picture is visible */
+}
+
+.profile-picture .avatar {
+    opacity: 0; /* Avatar is hidden by default */
+}
+
+.profile-picture:hover .main-picture {
+    opacity: 0; /* Hides the profile picture on hover */
+}
+
+.profile-picture:hover .avatar {
+    opacity: 1; /* Reveals the avatar on hover */
+}
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: #ddb892; /* Accent color on hover */
+    transform: translateY(-3px); /* Move slightly upwards */
+  }
+  .profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+    
+  button {
+    background-color: #B08968;
+    color: #E6CCB2;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #D5E1E8;
+    transform: scale(1.1); /* Slightly enlarges the button */
+  }
+  
+  .employers {
+    background-color: #ede0d4; /* Match your color palette */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .employers h2 {
+    color: #7f5539; /* Heading color */
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .employer-carousel {
+    display: flex;
+    overflow: hidden; /* Ensures only one logo is visible at a time */
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Set height according to logo size */
+    position: relative;
+  }
+  
+  .employer-carousel img {
+    width: 150px; /* Adjust logo size */
+    height: auto;
+    margin: 0 10px;
+    opacity: 0; /* Start hidden */
+    animation: flash 10s infinite; /* 6s for each cycle */
+  }
+  
+  .employer-carousel img:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #4A403A;
+    padding: 10px 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logo img {
+    width: 60px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+}
+
+nav {
+    
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ddb892;
+}
+
+  
+  .employer-carousel img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  
+  .employer-carousel img:nth-child(3) {
+    animation-delay: 4s;
+  }
+  
+  /* Keyframes for flashing effect */
+  @keyframes flash {
+    0%, 100% {
+      opacity: 0;
+      transform: scale(0.8); /* Slightly smaller when hidden */
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1); /* Full size when visible */
+    }
+  }
+  .skills {
+    background-color: #ede0d4; /* Match your color palette */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .skills h2 {
+    color: #7f5539; /* Heading color */
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .finance {
+    background-color: #ede0d4; /* Light, clean background */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .finance h2 {
+    color: #7f5539; /* Darker accent color */
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .finance-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .finance-card {
+    background-color: #e6ccb2; /* Light beige card background */
+    color: #4a403a; /* Text color */
+    border: 1px solid #ddb892;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .finance-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .finance-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+      
+  .market-facts {
+    background-color: #ede0d4; /* Match your portfolio theme */
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .market-facts h2 {
+    font-size: 24px;
+    color: #7f5539; /* Accent color */
+    margin-bottom: 30px;
+  }
+  
+  .market-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Adjusts layout for smaller screens */
+  }
+  
+  .market-card {
+    perspective: 1000px; /* Creates the 3D effect */
+    width: 200px;
+    height: 150px;
+    position: relative;
+  }
+  
+  .market-card .front,
+  .market-card .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.6s;
+  }
+
+  
+  .market-card .front {
+    background-color: #b08968; /* Front card color */
+    color: white;
+  }
+  
+  .market-card .back {
+    background-color: #7f5539; /* Back card color */
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .market-card:hover .front {
+    transform: rotateY(180deg);
+  }
+  
+  .market-card:hover .back {
+    transform: rotateY(0deg);
+  }
+  body {
+    background-color: #ede0d4; /* Match your theme */
+    position: relative;
+  }
+
+  .skill-facts {
+    background-color: #ede0d4; /* Match your portfolio theme */
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .skill-facts h2 {
+    font-size: 24px;
+    color: #7f5539; /* Accent color */
+    margin-bottom: 30px;
+  }
+  
+  .skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Adjusts layout for smaller screens */
+  }
+  
+  .skill-card {
+    perspective: 1000px; /* Creates the 3D effect */
+    width: 100px;
+    height: 60px;
+    position: relative;
+  }
+  .skill-card .front,
+  .skill-card .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.6s;
+  }
+
+  
+  .skill-card .front {
+    background-color: #b08968; /* Front card color */
+    color: white;
+  }
+  
+  .skill-card .back {
+    background-color: #7f5539; /* Back card color */
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .skill-card:hover .front {
+    transform: rotateY(180deg);
+  }
+  
+  .skill-card:hover .back {
+    transform: rotateY(0deg);
+  }
+
+   .projects-container {
+        display: flex;
+        overflow: hidden;
+        white-space: wrap;
+        animation: scroll 20s linear infinite;
+      }
+      .projects-container:hover {
+        animation-play-state: paused;
+      }
+      .project-card {
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        min-width: 300px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      @keyframes scroll {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+      .project-card img {
+        width: 100%;       /* Makes the image take the full width of the card */
+        height: auto;      /* Maintains the aspect ratio */
+        object-fit: cover; /* Ensures the image covers the card without distortion */
+        border-radius: 10px; /* Optional: Matches the card’s rounded corners */
+    }
+    
